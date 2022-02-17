@@ -8,12 +8,7 @@ import Nav from 'Components/Header/Nav';
 
 const Header = ({ activePage }) => {
   return (
-    <Container
-      maxWidth={false}
-      disableGutters
-      component="header"
-      sx={{ px: '2%' }}
-    >
+    <Container maxWidth={false} disableGutters component="header">
       <Grid container columnSpacing={2}>
         <Grid item md={2}>
           <Logo />

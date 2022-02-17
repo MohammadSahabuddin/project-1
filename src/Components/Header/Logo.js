@@ -1,7 +1,19 @@
-import React from 'react';
+import { Box } from '@mui/material';
+import Link from 'next/link';
+
+//Logo
+import Logos from 'Assets/virtualUniversityBd.png';
 
 const Logo = () => {
-  return <div>logo</div>;
+  return (
+    <Box>
+      <Link href="https://www.youtube.com/channel/UCl7VXfWmAhSl5Q3uGxuHVlg">
+        <a target="_blank">
+          <Box component="img" src={Logos} alt="Logo" sx={{ width: '100%' }} />
+        </a>
+      </Link>
+    </Box>
+  );
 };
 
 export default Logo;
