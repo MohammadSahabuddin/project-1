@@ -20,9 +20,9 @@ const Player = () => {
     <Box>
       <Box>
         <ReactPlayer
-          url="https://youtu.be/x0Y58wDhcIw"
+          url="https://youtu.be/xwg9Lf5ruUE"
           controls={true}
-          playing={true}
+          playing={false}
           width="100%"
           height={400}
         />

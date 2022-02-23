@@ -1,1 +1,8 @@
-I have complete v2 "0:57:49"
+I have complete v3 "0:27:00"
+
+Hooks use
+
+1.  =>false is default which I set it (hare I won't want to display the description texts so I set the state -> default false)
+    => here setDetails is set the default value, for here it is false
+    =>basically setDetails change the value of state
+    => here detail word is stored the default value, for here it is false.
