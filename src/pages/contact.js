@@ -1,5 +1,5 @@
 //Packages
-import { Box, Container, Grid } from '@mui/material';
+import { Container, Grid } from '@mui/material';
 
 //Layout
 import Layout from 'Layout';

@@ -1,5 +1,5 @@
 //Packages
-import { Box, Grid, List, ListItem, Typography, Slack } from '@mui/material';
+import { Box, Grid, List, ListItem, Typography } from '@mui/material';
 import Link from 'next/link';
 import { Icon } from '@iconify/react';
 
@@ -45,7 +45,7 @@ const Team = () => {
                     {team.about}
                   </Typography>
                   {team.socials?.length > 0 && (
-                    <Box component={Slack}>
+                    <Box>
                       {team.socials.map((s, i) => (
                         <Link key={i} href={s.social}>
                           <a>
