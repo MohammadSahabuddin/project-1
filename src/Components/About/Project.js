@@ -3,7 +3,7 @@ import { Box, Grid, List, ListItem, Typography } from '@mui/material';
 import Link from 'next/link';
 
 //Data
-import Projects from 'Data/About/Project.Data';
+import Projects from 'Data/About/Project.data';
 
 const Project = () => {
   return (
