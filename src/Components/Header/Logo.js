@@ -2,7 +2,7 @@ import { Box } from '@mui/material';
 import Link from 'next/link';
 
 //Logo
-import Logos from 'Assets/virtualUniversityBd.png';
+import Logos from 'Assets/codeforest24.png';
 
 const Logo = () => {
   return (

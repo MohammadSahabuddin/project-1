@@ -1,7 +1,7 @@
 //packages
 import { Box, Typography } from '@mui/material';
 //logo
-import Logo from 'Assets/virtualUniversityBd.png';
+import Logo from 'Assets/codeforest24.png';
 //iconify
 import { Icon } from '@iconify/react';
 const Brand = () => {

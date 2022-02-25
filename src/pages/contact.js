@@ -5,8 +5,8 @@ import { Box, Container, Grid } from '@mui/material';
 import Layout from 'Layout';
 
 //Components
-import Title from 'Components/About/Title';
-import Vector from 'Components/About/Vector';
+import Title from 'Components/Contact/Title';
+import Vector from 'Components/Contact/Vector';
 import Map from 'Components/Contact/Map';
 import Team from 'Components/Contact/Team';
 

@@ -9,7 +9,7 @@ const Copyright = () => {
       <Stack direction="row">
         <Icon icon="charm:copyright" />
         <Typography variant="body1" component="p">
-          {new Date().getFullYear()} VU BD, All right reserved
+          {new Date().getFullYear()} BD, All right reserved
         </Typography>
       </Stack>
     </Box>

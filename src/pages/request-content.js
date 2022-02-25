@@ -1,8 +1,22 @@
 //Layout
 import Layout from 'Layout';
 
+//Components
+import Title from 'Components/About/Title';
+import ContentInfo from 'Components/RequestContent/ContentInfo';
+import Form from 'Components/RequestContent/Form';
+import { Container } from '@mui/material';
+
 const Request = () => {
-  return <Layout activePage="request-content">Request Content PAge</Layout>;
+  return (
+    <Layout activePage="request-content">
+      <Container maxWidth={false} disableGutters component="section">
+        <Title />
+        <ContentInfo />
+        <Form />
+      </Container>
+    </Layout>
+  );
 };
 
 export default Request;
