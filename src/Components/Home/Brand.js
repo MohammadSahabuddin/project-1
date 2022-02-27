@@ -4,14 +4,16 @@ import { Box, Typography } from '@mui/material';
 import Logo from 'Assets/codeforest24.png';
 //iconify
 import { Icon } from '@iconify/react';
+//styles
+import styles from 'Styles/Home/Brand.styles';
 const Brand = () => {
   return (
-    <Box>
-      <Box component="img" src={Logo} width="100%" />
-      <Typography variant="h6" component="h6">
-        Love to hear naate a Rasool
+    <Box sx={{ textAlign: 'center', mt: '36%' }}>
+      <Box component="img" src={Logo} width="55%" />
+      <Typography variant="h6" component="h6" sx={styles.Slogan}>
+        I love Allah & Mohammad (SM.)
       </Typography>
-      <Box>
+      <Box sx={styles.Arrow}>
         <Icon className="first" icon="bi:chevron-down" />
         <Icon className="second" icon="bi:chevron-down" />
         <Icon className="third" icon="bi:chevron-down" />

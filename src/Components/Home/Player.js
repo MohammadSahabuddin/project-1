@@ -6,6 +6,8 @@ import { Box, Typography, ButtonBase } from '@mui/material';
 import ReactPlayer from 'react-player/youtube';
 import { Collapse } from 'react-collapse';
 
+//Styles
+import styles from 'Styles/Home/Player.styles';
 const Player = () => {
   const [details, setDetails] = useState(false);
   /* 
@@ -18,22 +20,28 @@ const Player = () => {
   console.log(details);
   return (
     <Box>
-      <Box>
+      <Box sx={styles.Player}>
         <ReactPlayer
           url="https://youtu.be/xwg9Lf5ruUE"
           controls={true}
           playing={false}
+          height="100%"
           width="100%"
-          height={400}
+          className="reactPlayer"
         />
       </Box>
-      <Typography>
+      <Typography variant="h5" component="h5" sx={{ my: '5px' }}>
         Post request with sending file to graphql api from next js application
         using axios | Cabbage
       </Typography>
-      <ButtonBase onClick={() => setDetails(!details)}>
-        {details ? 'Hide' : 'Show'} Details
-      </ButtonBase>
+      <Box sx={{ textAlign: 'right', mt: '5px' }}>
+        <ButtonBase
+          onClick={() => setDetails(!details)}
+          sx={styles.ShowDescriptionButton}
+        >
+          {details ? 'Hide' : 'Show'} Details
+        </ButtonBase>
+      </Box>
       <Collapse isOpened={details}>
         <Typography variant="body1" component="p">
           Post request with sending file to graphql api from next js application

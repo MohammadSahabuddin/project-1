@@ -8,8 +8,13 @@ import Nav from 'Components/Header/Nav';
 
 const Header = ({ activePage }) => {
   return (
-    <Container maxWidth={false} disableGutters component="header">
-      <Grid container columnSpacing={2}>
+    <Container
+      maxWidth={false}
+      disableGutters
+      component="header"
+      sx={{ py: '5px' }}
+    >
+      <Grid container columnSpacing={2} sx={{ alignItems: 'center' }}>
         <Grid item md={2}>
           <Logo />
         </Grid>

@@ -6,8 +6,13 @@ import Copyright from 'Components/Footer/Copyright';
 
 const Footer = () => {
   return (
-    <Container maxWidth={false} disableGutters component="footer">
-      <Grid container columnSpacing={2}>
+    <Container
+      maxWidth={false}
+      disableGutters
+      component="footer"
+      sx={{ py: '10px' }}
+    >
+      <Grid container columnSpacing={2} sx={{ alignItems: 'center' }}>
         <Grid item md={6}>
           <Subscribe />
         </Grid>
