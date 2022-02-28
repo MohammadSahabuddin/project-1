@@ -1,11 +1,13 @@
 //Packages
 import { Box, Typography } from '@mui/material';
 
+//styles
+import styles from 'Styles/Common/Title.style';
 const Title = () => {
   return (
-    <Box>
-      <Typography variant="h4" component="h4">
-        Contact Cabbage
+    <Box sx={styles.Title}>
+      <Typography variant="h5" component="h5">
+        Contact Code Forest 24
       </Typography>
     </Box>
   );

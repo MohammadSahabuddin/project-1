@@ -5,7 +5,7 @@ export default {
       color: 'primary.youtube',
       textDecoration: 'none',
       svg: {
-        fontSize: '40px',
+        fontSize: '50px',
       },
     },
   },

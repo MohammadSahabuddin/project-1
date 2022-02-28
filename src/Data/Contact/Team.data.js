@@ -13,19 +13,19 @@ export default [
     coordinates: [-58.3816, -34.6037],
     socials: [
       {
-        social: 'https://www.cabbageweb.tech/contact',
+        social: 'https://youtu.be/EjK30GuYgJ4',
         icon: 'brandico:facebook',
       },
       {
-        social: 'https://www.cabbageweb.tech/contact',
+        social: 'https://youtu.be/EjK30GuYgJ4',
         icon: 'akar-icons:twitter-fill',
       },
       {
-        social: 'https://www.cabbageweb.tech/contact',
+        social: 'https://youtu.be/EjK30GuYgJ4',
         icon: 'akar-icons:linkedin-fill',
       },
       {
-        social: 'https://www.cabbageweb.tech/contact',
+        social: 'https://youtu.be/EjK30GuYgJ4',
         icon: 'akar-icons:github-fill',
       },
     ],

@@ -11,12 +11,7 @@ import Video from 'Components/Home/Video';
 export default function Home() {
   return (
     <Layout activePage="home">
-      <Container
-        maxWidth={false}
-        disableGutters
-        component="section"
-        sx={{ p: '30px' }}
-      >
+      <Container maxWidth={false} disableGutters component="section">
         <Grid container spacing={2}>
           <Grid item md={8}>
             <Player />

@@ -2,7 +2,7 @@
 import Layout from 'Layout';
 
 //Components
-import Title from 'Components/About/Title';
+import Title from 'Components/RequestContent/Title';
 import ContentInfo from 'Components/RequestContent/ContentInfo';
 import Form from 'Components/RequestContent/Form';
 import { Container } from '@mui/material';

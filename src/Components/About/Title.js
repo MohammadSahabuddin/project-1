@@ -1,11 +1,13 @@
 import { Box, Typography } from '@mui/material';
-import React from 'react';
+
+//styles
+import styles from 'Styles/Common/Title.style';
 
 const Title = () => {
   return (
-    <Box>
+    <Box sx={styles.Title}>
       <Typography variant="h5" component="h5">
-        About Cabbage
+        About Code Forest 24
       </Typography>
     </Box>
   );

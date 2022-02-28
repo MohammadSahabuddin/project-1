@@ -1,17 +1,21 @@
+//Packages
 import { Box, Typography } from '@mui/material';
+
+//Styles
+import styles from 'Styles/About/AboutInfo.style';
 
 const AboutInfo = () => {
   return (
-    <Box>
+    <Box sx={styles.Info}>
       <Typography variant="h4" component="h4">
-        About Info
+        Code Forest 24
       </Typography>
       <Typography variant="h6" component="h6">
         The fearless programming
       </Typography>
       <Typography variant="body1" component="p">
-        Cabbage is a fearless programming platform. Here you can find web based
-        tutorial and full web development courses:)
+        Code Forest 24 is a fearless programming platform. Here you can find web
+        based tutorial and full web development courses:)
         <br />
         <br />
         Programming is the best in demand job in the world. Web programming is

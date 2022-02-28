@@ -6,7 +6,7 @@ export default {
       textDecoration: 'none',
       color: 'text.primary',
       button: {
-        fontSize: '16px',
+        fontSize: '18px',
         p: '2px 10px',
         borderRadius: '3px',
       },

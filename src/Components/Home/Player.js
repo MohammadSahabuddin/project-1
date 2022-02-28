@@ -32,7 +32,7 @@ const Player = () => {
       </Box>
       <Typography variant="h5" component="h5" sx={{ my: '5px' }}>
         Post request with sending file to graphql api from next js application
-        using axios | Cabbage
+        using axios | Codeforest 24
       </Typography>
       <Box sx={{ textAlign: 'right', mt: '5px' }}>
         <ButtonBase
@@ -45,18 +45,18 @@ const Player = () => {
       <Collapse isOpened={details}>
         <Typography variant="body1" component="p">
           Post request with sending file to graphql api from next js application
-          using axios | CabbagePost request with sending file to graphql api
-          from next js application using axios | CabbagePost request with
+          using axios | Code Forest 24 request with sending file to graphql api
+          from next js application using axios | Code Forest 24 request with
           sending file to graphql api from next js application using axios |
-          CabbagePost request with sending file to graphql api from next js
-          application using axios | CabbagePost request with sending file to
-          graphql api from next js application using axios | CabbagePost request
-          with sending file to graphql api from next js application using axios
-          | CabbagePost request with sending file to graphql api from next js
-          application using axios | CabbagePost request with sending file to
-          graphql api from next js application using axios | CabbagePost request
-          with sending file to graphql api from next js application using axios
-          | Cabbage
+          Code Forest 24 request with sending file to graphql api from next js
+          application using axios | Code Forest 24 request with sending file to
+          graphql api from next js application using axios | Code Forest 24
+          request with sending file to graphql api from next js application
+          using axios | Code Forest 24 request with sending file to graphql api
+          from next js application using axios | Code Forest 24 request with
+          sending file to graphql api from next js application using axios |
+          Code Forest 24 request with sending file to graphql api from next js
+          application using axios | Codeforest 24
         </Typography>
       </Collapse>
     </Box>

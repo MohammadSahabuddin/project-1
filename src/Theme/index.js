@@ -13,7 +13,7 @@ const theme = createTheme({
     },
     primary: {
       main: '#41739b', //Others Main Color
-      mainGradient: 'linear-gradient(to right,#01FFC3, #41739b)', //Gradient Color
+      mainGradient: 'linear-gradient(to right,#41739b,#01FFC3)', //Gradient Color
       youtube: '#FF0000', //Youtube logo color
       black_opacity: '#e8e8e8', //Table Color
       link_color: '#653096', //Link Color
@@ -25,8 +25,7 @@ const theme = createTheme({
     MuiContainer: {
       styleOverrides: {
         root: {
-          paddingLeft: '2%',
-          paddingRight: '2%',
+          padding: '2.25% 2%',
         },
       },
     },

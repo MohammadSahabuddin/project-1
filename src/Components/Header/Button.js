@@ -9,9 +9,9 @@ import styles from 'Styles/Header/Button.styles';
 const Button = () => {
   return (
     <Box sx={styles.Button}>
-      <Link href="https://www.youtube.com/shorts/2r3mtUzSYWQ">
+      <Link href="https://youtu.be/EjK30GuYgJ4">
         <a target="_blank">
-          <Icon icon="entypo-social:youtube" />
+          <Icon icon="ant-design:youtube-filled" />
         </a>
       </Link>
     </Box>

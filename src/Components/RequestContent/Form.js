@@ -1,6 +1,16 @@
 //Packages
-import { Box, Grid, TextField, Typography } from '@mui/material';
+import {
+  Box,
+  ButtonBase,
+  CircularProgress,
+  Grid,
+  TextField,
+  Typography,
+} from '@mui/material';
 import { useForm } from 'react-hook-form';
+
+//styles
+import styles from 'Styles/RequestContent/Form.style';
 
 const Form = () => {
   const {
@@ -14,7 +24,7 @@ const Form = () => {
   };
   console.log(watch('example'));
   return (
-    <Box>
+    <Box sx={styles.Form}>
       <Typography variant="h5" component="h5">
         Please fill up the form!
       </Typography>
@@ -35,18 +45,23 @@ const Form = () => {
                 maxLength: 80,
                 pattern: /^[A-Za-z]+$/i,
               })}
+              sx={styles.TextField}
             />
-            <Typography variant="body1" component="p">
-              **We will not publish your Name
-            </Typography>
+            {errors?.Name?.type !== 'maxLength' &&
+              errors?.Name?.type !== 'pattern' && (
+                <Typography variant="body1" component="p" sx={styles.Text}>
+                  **We will not publish your Name
+                </Typography>
+              )}
+
             {errors?.Name?.type === 'maxLength' && (
-              <Typography variant="body1" component="p">
-                First name cannot exceed 20 characters
+              <Typography variant="body1" component="p" sx={styles.Error}>
+                **Name cannot exceed 20 characters
               </Typography>
             )}
             {errors?.Name?.type === 'pattern' && (
-              <Typography variant="body1" component="p">
-                Alphabetical characters only
+              <Typography variant="body1" component="p" sx={styles.Error}>
+                **Alphabetical characters only
               </Typography>
             )}
           </Grid>
@@ -61,12 +76,14 @@ const Form = () => {
                 pattern: /^\S+@\S+$/i,
               })}
             />
-            <Typography variant="body1" component="p">
-              **We will not publish your Email
-            </Typography>
+            {errors?.Email?.type !== 'pattern' && (
+              <Typography variant="body1" component="p" sx={styles.Text}>
+                **We will not publish your Email
+              </Typography>
+            )}
             {errors?.Email?.type === 'pattern' && (
-              <Typography variant="body1" component="p">
-                input a valid email
+              <Typography variant="body1" component="p" sx={styles.Error}>
+                **input a valid email
               </Typography>
             )}
           </Grid>
@@ -80,12 +97,14 @@ const Form = () => {
               rows={4}
               {...register('About')}
             />
-            <Typography variant="body1" component="p">
+            <Typography variant="body1" component="p" sx={styles.Text}>
               **You can attach file by giving their link
             </Typography>
+            <ButtonBase type="submit" sx={styles.Button}>
+              Submit
+            </ButtonBase>
           </Grid>
         </Grid>
-        <input type="submit" />
       </Box>
     </Box>
   );

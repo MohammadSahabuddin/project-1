@@ -5,9 +5,12 @@ import Link from 'next/link';
 //Data
 import Projects from 'Data/About/Project.data';
 
+//Styles
+import styles from 'Styles/About/Project.style';
+
 const Project = () => {
   return (
-    <Box>
+    <Box sx={styles.Project}>
       <Typography variant="h5" component="h5">
         Projects
       </Typography>

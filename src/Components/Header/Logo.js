@@ -10,7 +10,7 @@ import styles from 'Styles/Header/Logo.styles';
 const Logo = () => {
   return (
     <Box>
-      <Link href="https://www.youtube.com/shorts/2r3mtUzSYWQ">
+      <Link href="https://youtu.be/EjK30GuYgJ4">
         <a target="_blank">
           <Box sx={styles.Logo} component="img" src={Logos} alt="Logo" />
         </a>
