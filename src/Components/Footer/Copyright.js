@@ -12,7 +12,7 @@ const Copyright = () => {
       <Stack direction="row" sx={styles.Copyright}>
         <Icon icon="charm:copyright" />
         <Typography variant="body1" component="p">
-          {new Date().getFullYear()} BD, All right reserved
+          {new Date().getFullYear()} Codeforest24, All right reserved
         </Typography>
       </Stack>
     </Box>

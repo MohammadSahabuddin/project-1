@@ -2,7 +2,7 @@ export default {
   subscribe: {
     textAlign: 'left',
     a: {
-      textDecoder: 'none',
+      textDecoration: 'none',
       color: 'background.default',
     },
   },

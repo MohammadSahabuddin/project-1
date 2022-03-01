@@ -14,18 +14,20 @@ const AboutInfo = () => {
         The fearless programming
       </Typography>
       <Typography variant="body1" component="p">
-        Code Forest 24 is a fearless programming platform. Here you can find web
-        based tutorial and full web development courses:)
+        <br />
+        Code Forest 24 is an organization of building websites. We have a group
+        of Professional Developer thats run by enthusiasts for coding our
+        process requirement & brief research development.
         <br />
         <br />
-        Programming is the best in demand job in the world. Web programming is
-        also the another field to create life more easier. And make money by
-        working less than a hour more and more. Freelancing is one of them:)
+        Our values align with our mission and thats is to support our customers.
+        Why would you choose us? Because we create quality-ful work and
+        SEO-friendly websites that are quickly optimized. We mainly use for
+        developing is next.js, node.js, express.js, graphql, etc. Dont hesitate
+        to ask any questions if you have any.
         <br />
         <br />
-        We are here for learn you all the type of programming you want learn.
-        Learn from Node js to Next js, solve all type of difficulties and
-        problem. Stay with us and make the day more happier:)
+        So why do you think? visit our website and be a part of our family.
       </Typography>
     </Box>
   );

@@ -8,10 +8,10 @@ import { Icon } from '@iconify/react';
 import styles from 'Styles/Home/Brand.styles';
 const Brand = () => {
   return (
-    <Box sx={{ textAlign: 'center', mt: '36%' }}>
-      <Box component="img" src={Logo} width="55%" />
+    <Box sx={{ textAlign: 'center', mt: '35%' }}>
+      <Box component="img" src={Logo} width="45%" />
       <Typography variant="h6" component="h6" sx={styles.Slogan}>
-        I love Allah & Mohammad (SM.)
+        An organization of building websites
       </Typography>
       <Box sx={styles.Arrow}>
         <Icon className="first" icon="bi:chevron-down" />

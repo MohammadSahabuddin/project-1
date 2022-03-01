@@ -13,13 +13,13 @@ import styles from 'Styles/Contact/Team.style';
 const Team = () => {
   return (
     <Box sx={styles.Team}>
-      <Typography variant="h4" component="h4">
+      <Typography variant="h5" component="h5">
         Team Members
       </Typography>
       <Typography
         variant="body1"
         component="p"
-        sx={{ mb: '30px', fontSize: '17px' }}
+        sx={{ mb: '30px', fontSize: '18px' }}
       >
         Code Forest 24 has not any contact info. You can contact any of our team
         members.
@@ -27,7 +27,7 @@ const Team = () => {
       {Teams?.length > 0 && (
         <List>
           {Teams.map((team, i) => (
-            <ListItem key={i}>
+            <ListItem key={i} sx={{ p: '0' }}>
               <Grid container spacing={3}>
                 <Grid item md={2}>
                   <Typography
@@ -35,6 +35,7 @@ const Team = () => {
                     src={team.image}
                     alt="AboutImage"
                     width="100%"
+                    sx={{ borderRadius: '3px' }}
                   />
                   <Typography
                     variant="body1"
@@ -46,6 +47,7 @@ const Team = () => {
                         sx={{
                           textDecoration: 'none',
                           cursor: 'pointer',
+                          color: 'primary.link_color',
                         }}
                       >
                         {team.website}

@@ -1,5 +1,6 @@
 export default {
   Team: {
+    mt: '30px',
     h4: {
       fontWeight: 700,
     },

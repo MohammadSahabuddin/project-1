@@ -1,5 +1,6 @@
 export default {
   ListItem: {
+    p: '8px 12px',
     width: 'unset',
     textAlign: 'center',
     a: {

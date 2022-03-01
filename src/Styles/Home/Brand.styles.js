@@ -12,7 +12,7 @@ const ArrowAnimation = keyframes`
 export default {
   Slogan: { fontSize: '20px', ml: '20px', mt: '5px' },
   Arrow: {
-    mt: '50px',
+    mt: '45px',
     textAlign: 'center',
     svg: {
       fontSize: '28px',

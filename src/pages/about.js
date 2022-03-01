@@ -14,11 +14,11 @@ const About = () => {
     <Layout activePage="about">
       <Container maxWidth={false} disableGutters component="section">
         <Title />
-        <Grid container columnSpacing={2}>
+        <Grid container columnSpacing={2} sx={{ alignItems: 'center' }}>
           <Grid item md={6}>
             <Vector />
           </Grid>
-          <Grid item md={6}>
+          <Grid item md={6} sx={{ mt: '-10' }}>
             <AboutInfo />
           </Grid>
         </Grid>

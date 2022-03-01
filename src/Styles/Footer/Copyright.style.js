@@ -3,11 +3,11 @@ export default {
     justifyContent: 'right',
     alignItems: 'center',
     svg: {
-      fontSize: '20px',
+      fontSize: '18px',
       mr: '2px',
     },
     '& p': {
-      fontSize: '20px',
+      fontSize: '16px',
     },
   },
 };

@@ -14,7 +14,7 @@ const Project = () => {
       <Typography variant="h5" component="h5">
         Projects
       </Typography>
-      <List>
+      <List className="listttt">
         {Projects?.length > 0 &&
           Projects.map((project, i) => (
             <ListItem key={i}>
