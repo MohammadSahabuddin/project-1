@@ -2,6 +2,8 @@
 import { Container, Grid } from '@mui/material';
 //Layout
 import Layout from 'Layout';
+//SEO
+import Seo from 'Utils/Seo';
 
 //Components
 import Title from 'Components/About/Title';
@@ -12,6 +14,7 @@ import AboutInfo from 'Components/About/AboutInfo';
 const About = () => {
   return (
     <Layout activePage="about">
+      <Seo title="About | Codeforest24" />
       <Container maxWidth={false} disableGutters component="section">
         <Title />
         <Grid container columnSpacing={2} sx={{ alignItems: 'center' }}>

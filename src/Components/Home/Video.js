@@ -4,31 +4,34 @@ import Link from 'next/link';
 
 //Data
 import Videos from 'Data/Dummy/videos.data';
+//Redux
+import { useSelector } from 'react-redux';
 
 //styles
 import styles from 'Styles/Home/Video.styles';
 
-const Video = () => {
+const Video = ({ setCurrent }) => {
+  const { videos, nextPageToken } = useSelector((state) => state.videoInfo);
+  const videoOnClick = (i) => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setCurrent(i);
+  };
   return (
     <Box sx={{ mt: '20px' }}>
-      <Grid container spacing={3}>
-        {Videos?.length > 0 &&
-          Videos.map((video, i) => (
+      <Grid container spacing={2}>
+        {videos?.length > 0 &&
+          videos.map((video, i) => (
             <Grid item md={3} key={i}>
-              <Box sx={styles.videos}>
-                <Link href={video.link}>
-                  <a target="_blank">
-                    <Box
-                      component="img"
-                      src={video.image}
-                      alt={video.alt}
-                      width="100%"
-                    />
-                    <Typography variant="h5" component="h5">
-                      {video.title}
-                    </Typography>
-                  </a>
-                </Link>
+              <Box sx={styles.videos} onClick={() => videoOnClick(i)}>
+                <Box
+                  component="img"
+                  src={video.snippet.thumbnails.medium.url}
+                  alt={video.alt}
+                  width="100%"
+                />
+                <Typography variant="h5" component="h5">
+                  {video.snippet.title}
+                </Typography>
               </Box>
             </Grid>
           ))}

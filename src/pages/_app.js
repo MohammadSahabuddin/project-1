@@ -1,3 +1,4 @@
+//packages
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
@@ -6,6 +7,10 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { CacheProvider } from '@emotion/react';
 import theme from 'Theme';
 import createEmotionCache from 'Emotion';
+import NextProgress from 'next-progress';
+
+//wrapper
+import { wrapper } from 'Redux/store';
 
 //Fonts
 import '@fontsource/nunito/300.css';
@@ -15,7 +20,7 @@ import '@fontsource/nunito/700.css';
 
 const clientSideEmotionCache = createEmotionCache();
 
-export default function MyApp(props) {
+function MyApp(props) {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
 
   return (
@@ -25,6 +30,12 @@ export default function MyApp(props) {
       </Head>
       <ThemeProvider theme={theme}>
         <CssBaseline />
+        <NextProgress
+          delay={400}
+          options={{ showSpinner: false }}
+          height="2px"
+          color="#00FFC3"
+        />
         <Component {...pageProps} />
       </ThemeProvider>
     </CacheProvider>
@@ -36,3 +47,4 @@ MyApp.propTypes = {
   emotionCache: PropTypes.object,
   pageProps: PropTypes.object.isRequired,
 };
+export default wrapper.withRedux(MyApp);

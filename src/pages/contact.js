@@ -1,8 +1,9 @@
 //Packages
 import { Container, Grid } from '@mui/material';
-
 //Layout
 import Layout from 'Layout';
+//SEO
+import Seo from 'Utils/Seo';
 
 //Components
 import Title from 'Components/Contact/Title';
@@ -13,6 +14,7 @@ import Team from 'Components/Contact/Team';
 const Contact = () => {
   return (
     <Layout activePage="contact">
+      <Seo title="Contact | Codeforest24" />
       <Container maxWidth={false} disableGutters component="section">
         <Title />
         <Grid container spacing={2}>
