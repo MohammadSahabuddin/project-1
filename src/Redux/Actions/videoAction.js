@@ -5,10 +5,11 @@ import {
 } from 'Redux/Constant/videoTypes';
 import axios from 'axios';
 
-export const getVideos = () => async (dispatch) => {
+export const getVideos = (pages) => async (dispatch) => {
+  dispatch({ type: GET_VIDEO_LOADING });
   await axios
     .get(
-      'https://www.googleapis.com/youtube/v3/playlistItems?playlistId=UUdtljfn2uCmlMtiBcGbnxvQ&key=AIzaSyDyc4T-Ak6OVc4broGgVJfqwHGIe6AytlE&part=snippet&maxResults=8'
+      `https://www.googleapis.com/youtube/v3/playlistItems?playlistId=${process.env.NEXT_PUBLIC_YOUTUBE_PLAYLIST_ID}&key=${process.env.NEXT_PUBLIC_YOUTUBE_API_KEY}&part=snippet&maxResults=8&pageToken=${pages}`
     )
     .then((res) => {
       dispatch({
@@ -17,6 +18,7 @@ export const getVideos = () => async (dispatch) => {
           video: res.data.items,
           nextPageToken: res.data.nextPageToken,
           hasNextPage: res.data.nextPageToken ? true : false,
+          firstRender: pages ? true : false,
         },
       });
     })

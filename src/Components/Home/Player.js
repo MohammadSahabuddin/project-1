@@ -6,12 +6,9 @@ import { Box, Typography, ButtonBase } from '@mui/material';
 import ReactPlayer from 'react-player/youtube';
 import { Collapse } from 'react-collapse';
 
-//Redux
-import { useSelector } from 'react-redux';
-
 //Styles
 import styles from 'Styles/Home/Player.styles';
-const Player = ({ current }) => {
+const Player = ({ current, videoList }) => {
   const [details, setDetails] = useState(false);
   /* 
   =>false is default which I set it (hare I won't want to display the description texts so I set the state -> default false)
@@ -20,12 +17,11 @@ const Player = ({ current }) => {
   => here detail word is stored the default value, for here it is false.
   => console.log(details);
   */
-  const { videos } = useSelector((state) => state.videoInfo);
   return (
     <Box>
       <Box sx={styles.Player}>
         <ReactPlayer
-          url={`https://youtu.be/${videos[current].snippet.resourceId.videoId}`}
+          url={`https://youtu.be/${videoList[current].snippet.resourceId.videoId}`}
           controls={true}
           playing={true}
           height="100%"
@@ -34,7 +30,7 @@ const Player = ({ current }) => {
         />
       </Box>
       <Typography variant="h5" component="h5" sx={{ my: '5px' }}>
-        ${videos[current].snippet.title}
+        ${videoList[current].snippet.title}
       </Typography>
       <Box sx={{ textAlign: 'right', mt: '5px' }}>
         <ButtonBase
@@ -53,7 +49,7 @@ const Player = ({ current }) => {
             component="p"
             sx={{ fontSize: '18px', mt: '15px', whiteSpace: 'pre-wrap' }}
           >
-            ${videos[current].snippet.description}
+            ${videoList[current].snippet.description}
           </Typography>
         </Collapse>
       </Box>

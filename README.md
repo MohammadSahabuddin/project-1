@@ -80,4 +80,26 @@ in redux
 
 ## let means =>> state
 
-video :"1:29:0"
+====================>>>>>>>>>>>
+
+##
+
+we use 2type of pagination 1)inline(like google) 2)loading page(like facebook/whatsApp/)
+
+$$
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+For saving content in a frontend have to use useState
+
+=>>>>>
+useEffect = useMemo is use for denoting the  changes in web //it only understand the changes in clientSide
+
+=>>>
+
+[...video,...videos] means 2 different array convert into 1 array
+
+=>>
+for use redux function we have to use dispatch
+
+video :"0:38:33"
+$$

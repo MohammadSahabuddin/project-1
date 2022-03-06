@@ -12,7 +12,7 @@ const theme = createTheme({
       default: '#fff', //Default Background Color
     },
     primary: {
-      main: '#41739b', //Others Main Color
+      main: '#08E8B3', //Others Main Color
       mainGradient: 'linear-gradient(to right,#41739b,#01FFC3)', //Gradient Color
       youtube: '#FF0000', //Youtube logo color
       black_opacity: '#e8e8e8', //Table Color
