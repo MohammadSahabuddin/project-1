@@ -14,22 +14,22 @@ const Project = () => {
       <Typography variant="h5" component="h5">
         Projects
       </Typography>
-      <List className="listttt">
+      <List>
         {Projects?.length > 0 &&
           Projects.map((project, i) => (
             <ListItem key={i}>
               <Grid container spacing={3}>
-                <Grid item md={8}>
+                <Grid item msm={8} xxs={12}>
                   <Typography variant="body1" component="p">
                     {project.title}
                   </Typography>
                 </Grid>
-                <Grid item md={2}>
+                <Grid item msm={2} xxs={6}>
                   <Typography variant="body1" component="p">
                     {project.category}
                   </Typography>
                 </Grid>
-                <Grid item md={2}>
+                <Grid item msm={2} xxs={6} sx={styles.Download}>
                   <Typography variant="body1" component="p">
                     <Link href={project.download}>
                       <a>Download</a>

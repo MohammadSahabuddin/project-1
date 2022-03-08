@@ -1,6 +1,6 @@
 export default {
   subscribe: {
-    textAlign: 'left',
+    textAlign: { msm: 'left', xxs: 'center' },
     a: {
       textDecoration: 'none',
       color: 'background.default',

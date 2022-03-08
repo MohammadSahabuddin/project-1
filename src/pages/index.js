@@ -3,15 +3,12 @@ import { useState, useMemo } from 'react';
 import { Container, Grid } from '@mui/material';
 //Layout
 import Layout from 'Layout';
-
 //SEO
 import Seo from 'Utils/Seo';
-
 //Redux
 import { getVideos } from 'Redux/Actions/videoAction';
 import { wrapper } from 'Redux/store';
 import { useSelector } from 'react-redux';
-
 //components
 import Player from 'Components/Home/Player';
 import Brand from 'Components/Home/Brand';
@@ -25,16 +22,16 @@ export default function Home() {
     if (firstRender) {
       setVideos((video) => [...video, ...videos]);
     }
-  }, [videos]); //useMemo is run for [videos]
+  }, [videos, firstRender]); //useMemo is run for [videos]
   return (
     <Layout activePage="home">
       <Seo title="Home | Codeforest24" />
       <Container maxWidth={false} disableGutters component="section">
         <Grid container spacing={2}>
-          <Grid item md={8}>
+          <Grid item md={8} xxs={12}>
             <Player current={current} videoList={videoList} />
           </Grid>
-          <Grid item md={4}>
+          <Grid item md={4} sx={{ display: { md: 'unset', xxs: 'none' } }}>
             <Brand />
           </Grid>
         </Grid>

@@ -13,10 +13,10 @@ const Footer = () => {
       sx={{ py: '10px' }}
     >
       <Grid container columnSpacing={2} sx={{ alignItems: 'center' }}>
-        <Grid item md={6}>
+        <Grid item lsm={6} msm={3} xxs={12}>
           <Subscribe />
         </Grid>
-        <Grid item md={6}>
+        <Grid item lsm={6} msm={9} xxs={12}>
           <Copyright />
         </Grid>
       </Grid>

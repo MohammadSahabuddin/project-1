@@ -31,7 +31,7 @@ const Video = ({ setCurrent, videoList }) => {
       <Grid container spacing={2}>
         {videoList?.length > 0 &&
           videoList.map((video, i) => (
-            <Grid item md={3} key={i}>
+            <Grid item md={3} lsm={4} sm={6} xxs={12} key={i}>
               <Box sx={styles.videos} onClick={() => videoOnClick(i)}>
                 <Box
                   component="img"

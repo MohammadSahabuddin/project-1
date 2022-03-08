@@ -1,5 +1,10 @@
 export default {
   Logo: {
-    width: '30%',
+    width: {
+      lg: '30%',
+      smd: '50%',
+      lsm: '25%',
+      xxs: '40%',
+    },
   },
 };

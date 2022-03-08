@@ -14,4 +14,10 @@ export default {
       },
     },
   },
+  Download: {
+    textAlign: {
+      xxs: 'right',
+      smd: 'unset',
+    },
+  },
 };

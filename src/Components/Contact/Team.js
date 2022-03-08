@@ -29,7 +29,7 @@ const Team = () => {
           {Teams.map((team, i) => (
             <ListItem key={i} sx={{ p: '0' }}>
               <Grid container spacing={3}>
-                <Grid item md={2}>
+                <Grid item md={2} smd={4} lsm={5} msm={6} sm={7} xxs={12}>
                   <Typography
                     component="img"
                     src={team.image}
@@ -42,7 +42,7 @@ const Team = () => {
                     component="p"
                     sx={{ textAlign: 'center' }}
                   >
-                    <Link href={team.website}>
+                    <Link href={team.website} passHref>
                       <A
                         sx={{
                           textDecoration: 'none',
@@ -55,7 +55,7 @@ const Team = () => {
                     </Link>
                   </Typography>
                 </Grid>
-                <Grid item md={10}>
+                <Grid item md={10} xxs={12}>
                   <Typography variant="h4" component="h5">
                     {team.name}
                   </Typography>

@@ -8,7 +8,10 @@ export default {
     h5: {
       color: 'background.default',
       fontWeight: 700,
-      fontSize: '30px',
+      fontSize: {
+        sm: '30px',
+        xxs: '25px',
+      },
     },
   },
 };

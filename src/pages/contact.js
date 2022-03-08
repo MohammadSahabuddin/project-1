@@ -18,10 +18,10 @@ const Contact = () => {
       <Container maxWidth={false} disableGutters component="section">
         <Title />
         <Grid container spacing={2}>
-          <Grid item md={7}>
+          <Grid item md={7} xxs={12}>
             <Vector />
           </Grid>
-          <Grid item md={5}>
+          <Grid item md={5} xxs={12}>
             <Map />
           </Grid>
         </Grid>

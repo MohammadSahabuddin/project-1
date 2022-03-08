@@ -11,6 +11,10 @@ export default {
   Text: {
     color: 'primary.main',
     mb: '5px',
+    display: '-webkit-box',
+    WebkitBoxOrient: 'vertical',
+    overflow: 'hidden',
+    WebkitLineClamp: '1',
   },
   Error: {
     color: 'primary.youtube',

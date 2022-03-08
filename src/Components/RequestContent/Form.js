@@ -1,12 +1,5 @@
 //Packages
-import {
-  Box,
-  ButtonBase,
-  CircularProgress,
-  Grid,
-  TextField,
-  Typography,
-} from '@mui/material';
+import { Box, ButtonBase, Grid, TextField, Typography } from '@mui/material';
 import { useForm } from 'react-hook-form';
 
 //styles
@@ -34,7 +27,7 @@ const Form = () => {
         onSubmit={handleSubmit(onSubmit)}
       >
         <Grid container spacing={3}>
-          <Grid item md={6}>
+          <Grid item sm={6} xxs={12}>
             <TextField
               fullWidth={true}
               required
@@ -65,7 +58,7 @@ const Form = () => {
               </Typography>
             )}
           </Grid>
-          <Grid item md={6}>
+          <Grid item sm={6} xxs={12}>
             <TextField
               fullWidth={true}
               required
@@ -87,7 +80,7 @@ const Form = () => {
               </Typography>
             )}
           </Grid>
-          <Grid item md={12}>
+          <Grid item xxs={12}>
             <TextField
               fullWidth={true}
               required

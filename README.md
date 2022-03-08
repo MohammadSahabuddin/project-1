@@ -101,5 +101,14 @@ useEffect = useMemo is use for denoting the  changes in web //it only understand
 =>>
 for use redux function we have to use dispatch
 
-video :"0:38:33"
+
+=======================>>>>>>>>>>>>>>>>>>>>>>>>
+for responsive=>
+1. padding base(we used it)
+2. width base(bootstrap used it)
+
+
+
+
+video :"0:05:33"
 $$
