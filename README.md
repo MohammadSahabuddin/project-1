@@ -108,7 +108,4 @@ for responsive=>
 2. width base(bootstrap used it)
 
 
-
-
-video :"0:05:33"
 $$
